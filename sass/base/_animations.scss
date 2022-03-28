@@ -1,0 +1,53 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    /* This comes from the negative x-direction(left) */
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    /* This gives it a shaky effect */
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    /* This comes from the negative x-direction(left) */
+    transform: translateX(10rem);
+  }
+
+  80% {
+    /* This gives it a shaky effect */
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    /* This comes from the positive y-direction(bottom) */
+    transform: translateY(10rem);
+  }
+
+  80% {
+    /* This gives it a shaky effect */
+    /* transform: translateX(-10px); */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

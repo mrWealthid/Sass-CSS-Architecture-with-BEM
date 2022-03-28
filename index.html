@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced CSS</title>
+  <link rel="stylesheet" href="./styles/_ICONFONT/styles.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+
+
+  <!-- 
+        Implementing BEM (Block Element Modifier) notation -->
+
+  <header class="header">
+    <!-- <section class="headerContainer"> -->
+    <!-- Header Top -->
+    <section class="header__section">
+
+      <img class="header__logo" src="./assets/logo-white.png" alt="logo" />
+
+
+      <!-- <div class="headerburger">HeaderText</div> -->
+    </section>
+
+
+    <!-- Header Content Section -->
+    <section class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">OUTDOORS</span>
+        <span class="heading-primary--submain">IS WHERE LIFE HAPPENS</span>
+      </h1>
+
+      <!-- <div class="headerbtn"> -->
+      <button class="btn btn--white btn--animated">Discover Our Tours</button>
+      <!-- </div> -->
+    </section>
+  </header>
+
+
+  <main>
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big ">
+        <h2 class="heading-secondary">
+          Exciting tours for adventurous people
+        </h2>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            You are going to fall in love with nature
+          </h3>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in inventore sed,
+            doloribus, officia accusamus quis ab illum nisi laboriosam doloremque vero debitis! Reprehenderit earum
+            placeat laboriosam ut aliquam nobis.</p>
+
+
+          <h3 class="heading-tertiary">
+            Live adventurous like you've never have before
+          </h3>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in inventore sed,
+            doloribus, officia accusamus quis ab illum nisi laboriosam doloremque vero debitis! Reprehenderit earum
+            placeat laboriosam ut aliquam nobis.</p>
+          <a href="#" class="btn-text">Learn more &rarr;</a>
+        </div>
+
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img src="assets/nat-1-large.jpg" alt="pic1" class="composition__photo composition__photo--p1" />
+            <img src="assets/nat-2-large.jpg" alt="pic2" class="composition__photo composition__photo--p2" />
+            <img src="assets/nat-3-large.jpg" alt="pic3" class="composition__photo composition__photo--p3" />
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section class="section-features">
+
+
+      <div class="row">
+
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-world"></i>
+            <h3 class="heading-tertiary">
+              Explore the world
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis, ab dolorem perspiciatis natus officiis
+
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-compass"></i>
+            <h3 class="heading-tertiary">
+              Explore the world
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis, ab dolorem perspiciatis natus officiis
+
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-map"></i>
+            <h3 class="heading-tertiary">
+              Explore the world
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis, ab dolorem perspiciatis natus officiis
+
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary">
+              Explore the world
+            </h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis, ab dolorem perspiciatis natus officiis
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-tours">
+
+      <div class="u-center-text u-margin-bottom-big ">
+        <h2 class="heading-secondary">
+          Most popular tours
+        </h2>
+      </div>
+
+
+      <div class="row">
+        <div class="col-1-of-3">
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">
+                Picture
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1">
+                  The Sea Explorer
+                </span>
+
+              </h4>
+
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tour guides</li>
+                  <li>Sleep in cozy Hotels</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">
+                    $297
+                  </p>
+                </div>
+                <a href="#" class="btn btn--white">Book now </a>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-1-of-3">
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2">
+                Picture
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2">
+                  The Sea Explorer
+                </span>
+
+              </h4>
+
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tour guides</li>
+                  <li>Sleep in cozy Hotels</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">
+                    $297
+                  </p>
+                </div>
+                <a href="#" class="btn btn--white">Book now </a>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-1-of-3">
+
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3">
+                Picture
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--3">
+                  The Sea Explorer
+                </span>
+
+              </h4>
+
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tour guides</li>
+                  <li>Sleep in cozy Hotels</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">
+                    $297
+                  </p>
+                </div>
+                <a href="#" class="btn btn--white">Book now </a>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+  <section class="grid-test">
+    <div class="row">
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+
+      <div class="col-1-of-2">
+        Col 1 of 2
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-1-of-3">
+        Col 1 of 3
+      </div>
+
+      <div class="col-2-of-3">
+        Col 2 of 3
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-2-of-4">
+        Col 2 of 4
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-1-of-4">
+        Col 1 of 4
+      </div>
+
+      <div class="col-3-of-4">
+        Col 3 of 4
+      </div>
+
+    </div>
+
+  </section> -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+/* understanding how to use relative units (rem and em)  */
+
+/* rem is relative to the root element font size;
+em is relative to the parent element font size 
+all relative units are converted to pixels during CSS parsing
+*/
+
+html {
+  //This defines what one rem should be
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
