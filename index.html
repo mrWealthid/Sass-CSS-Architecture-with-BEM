@@ -163,7 +163,7 @@
     </section>
 
 
-    <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           Most popular tours
@@ -206,7 +206,7 @@
                     $297
                   </p>
                 </div>
-                <a href="#" class="btn btn--white">Book now </a>
+                <a href="#popup" class="btn btn--white">Book now </a>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@
                     $597
                   </p>
                 </div>
-                <a href="#" class="btn btn--white">Book now </a>
+                <a href="#popup" class="btn btn--white">Book now </a>
               </div>
 
             </div>
@@ -291,7 +291,7 @@
                     $897
                   </p>
                 </div>
-                <a href="#" class="btn btn--white">Book now </a>
+                <a href="#popup" class="btn btn--white">Book now </a>
               </div>
             </div>
           </div>
@@ -474,9 +474,9 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
-
+        <a href="#section-tours" class="popup__close"></a>
         <div class="popup__left">
           <img class="popup__img" src="assets/nat-8.jpg" alt="Tour photo">
 
@@ -484,10 +484,12 @@
 
         </div>
         <div class="popup__right">
-          <h2 class="heading-secondary">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
             Start booking now
           </h2>
-          <h3 class="heading-tertiary">Important &ndash; Please read these terms before booking</h3>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking
+          </h3>
           <p class="popup__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor eius quisquam deleniti eaque ab
             doloremque quas facilis consequatur voluptate cumque eum eveniet, sint, exercitationem deserunt velit?
