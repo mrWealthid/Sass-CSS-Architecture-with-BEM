@@ -8,6 +8,15 @@
   // using psuedo classes
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   //using attribute selector
@@ -21,16 +30,26 @@
 
   // [class$="col-"]
 
+  @include clear-fix;
   [class^="col-"] {
     // background-color: orangered;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-vertical;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
   //using mixins
-  @include clear-fix;
+
   //To use the calc method in scss we put #{}
   .col-1-of-2 {
     width: calc((100% - #{$gutter-vertical}) / 2);

@@ -1,19 +1,24 @@
 body {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
+  color: $color-grey-dark;
 }
 
 .heading-primary {
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
   text-align: center;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
 
-  .heading-primary--main {
+  &--main {
     color: white;
     letter-spacing: 3.5rem;
     font-size: 4.5rem;
+    display: block;
     /* animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-in-out; */
@@ -23,8 +28,17 @@ body {
     /* 
   animation-delay: 3s;
   animation-iteration-count: 3; */
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
   }
   &--submain {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+
     color: white;
     letter-spacing: 1.7rem;
     /* font-size: ; */
@@ -34,6 +48,9 @@ body {
 
     /* shorthand Property */
     animation: moveInRight 2s ease-in-out;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -51,6 +68,14 @@ body {
   transition: 0.2s ease-in-out;
   -webkit-background-clip: text;
   color: transparent;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5em 1rem 2rem rgba($color-black, 0.2);
